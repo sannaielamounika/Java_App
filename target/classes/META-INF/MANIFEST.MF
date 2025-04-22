@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Built-By: minhaz_pc
-Build-Jdk: 19.0.1
-Main-Class: com.app.App
-Created-By: Maven Integration for Eclipse
-
