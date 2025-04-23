@@ -1,11 +1,21 @@
+// File: src/main/java/com/app/App.java
 package com.app;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.*;
+
+@SpringBootApplication
+@RestController
 public class App {
 
-	public static void main(String[] args) {
-		
-		System.out.println("This is my first java program after 1.5 years! I missed you java!");
+    public static void main(String[] args) {
+        SpringApplication.run(App.class, args);
+    }
 
-	}
-
+    @GetMapping("/")
+    public String hello() {
+        return "Hello from Java on Docker!";
+    }
 }
+
